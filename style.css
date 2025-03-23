@@ -203,6 +203,84 @@ body{
     border-radius: 5px;
 }
 
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .container .clock {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .hands_box .hour {
+        width: 55vw;
+        height: 55vw;
+    }
+    .hands_box .hour i {
+        height: 27vw;
+    }
+    .hands_box .hour i::after {
+        height: 23vw;
+        width: 2.5vw;
+        bottom: 5vw;
+    }
+
+    .hands_box .minute {
+        width: 70vw;
+        height: 70vw;
+    }
+    .hands_box .minute i {
+        height: 36vw;
+    }
+    .hands_box .minute i::before {
+        height: 32vw;
+        width: 2.5vw;
+        bottom: 5vw;
+    }
+    .hands_box .minute::before {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .hands_box .second {
+        width: 80vw;
+        height: 80vw;
+    }
+    .hands_box .second i {
+        height: calc(40vw + 10vw);
+    }
+    .hands_box .second i::before {
+        height: 7vw;
+        width: 2vw;
+        bottom: -0.8vw;
+    }
+    .hands_box .second::before {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .hands_box .second::after {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .number_hours span p {
+        font-size: 8vw;
+    }
+
+    .clock .seconds_bar span:nth-child(5n) p {
+        width: 1vw;
+        height: 3vw;
+    }
+
+    .clock .seconds_bar span p {
+        width: 0.6vw;
+        height: 2vw;
+    }
+}
 
 
 
